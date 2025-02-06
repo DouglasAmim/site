@@ -1,0 +1,50 @@
+<!-- criar-tarefa.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Tarefa - EcoBairro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Tarefas</a>
+        <a href="criar-tarefa.html">Nova Tarefa</a>
+        <a href="ranking.html">Ranking</a>
+    </nav>
+
+    <div class="container">
+        <h1>Nova Tarefa</h1>
+        <form id="task-form">
+            <div class="form-group">
+                <label>Nome do colaborador(a):</label>
+                <input type="text" id="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label>Tipo de Tarefa:</label>
+                <select id="tipo-tarefa" required>
+                    <option value="50">Coleta de Lixo (50 pontos)</option>
+                    <option value="30">Exercícios Físicos (30 pontos)</option>
+                    <option value="20">Reciclagem (20 pontos)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Descrição:</label>
+                <textarea id="descricao" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Foto da atividade:</label>
+                <input type="file" id="foto" accept="image/*" capture required>
+            </div>
+
+            <button type="submit">ENVIAR</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
